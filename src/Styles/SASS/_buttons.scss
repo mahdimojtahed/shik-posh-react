@@ -1,0 +1,103 @@
+.btn {
+    cursor: pointer;
+    border: transparent;
+    border-radius: $border-radius-1;
+    letter-spacing: $letter-spacing-1;
+    padding: .375rem .75rem;
+    box-shadow: $shadow-2;
+    transition: $transition;
+    text-transform: capitalize;
+    display: inline-block; 
+    color: $white;
+    background: $clr-primary-500;
+}
+
+.btn-regular {
+    @extend .btn;
+    &:hover {
+        background-color: $clr-primary-700;
+        box-shadow: $shadow-4;
+    }
+}
+
+.btn-hipster {
+    @extend .btn;
+    color: $clr-primary-500;
+    background: $clr-primary-200;
+    
+    &:hover {
+        color: $clr-primary-200;
+        box-shadow: $shadow-4;
+        background: $clr-primary-700;
+    }
+}
+
+// For forms and cards , we extend btn class in their class in sass instead of creating another class , see code in line 204
+// .btn-block {
+//     @extend .btn;
+//     width: 100%;
+// }
+
+
+.btn-push {
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    border-radius: $border-radius-2;
+    color: $white;
+    background: #333;
+    outline: none;
+    padding: .5rem 1.5rem;
+    box-shadow: 0 0.3rem rgba(121,121,121, $alpha: .65);
+    transition: $transition;
+
+    &:focus{outline: none;}
+    &:hover{filter: brightness(1.2);}
+    &:active{transform: translate(0, 0.3rem); box-shadow: 0 .1rem rgba(255,255,255,.65);}
+
+}
+
+
+
+// shine btn on hover
+.btn-shining {
+    // width: 15rem;
+    // height: 3rem;
+    padding: .5rem 2rem;
+    background: linear-gradient(to right, $clr-grey-600, $clr-grey-900);
+    color: $white;
+    border: transparent;
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: inherit;
+    letter-spacing: $letter-spacing-1;
+    border-radius: $border-radius-1;
+    box-shadow: $shadow-4;
+    transition: $transition;
+    margin-top: 1.5rem;
+    &:active{ transform: scale(.95);}
+    &:focus{ outline: none;}
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, 
+            transparent,
+            $white,
+            transparent
+        );
+        position: absolute;
+        top: 0;
+        left: -110%;
+        transform: skewX(30deg);
+        transition: $transition;
+    }
+
+    &:hover { &::before { left: 110%; }}
+}

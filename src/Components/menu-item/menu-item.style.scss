@@ -1,0 +1,59 @@
+@import '../../Styles/style.scss';
+
+.menu-item {
+      width: 300px;
+      min-height: 30%;
+      height: 250px;
+      flex: 1 1 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+      border-radius: .5rem;
+
+      background-position: center;
+      background-size: cover;
+      
+      &.large {
+            height: 320px;
+      }
+      
+
+      .content {
+            height: 90px;
+            padding: 0 1.6rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: $white-smoke;
+            opacity: 0.7;
+            transition: all 3s;
+      }
+
+      .title {
+            font-weight: bold;
+            margin-bottom: .3rem;
+            font-size: 2rem;
+            color: $clr-grey-1000;
+            text-transform: uppercase;
+      }
+
+      .subtitle {
+            font-weight: lighter;
+            font-size: 1.5rem;
+      }
+
+      &:hover {
+            cursor: pointer;
+            & img {transform: scale(1.1);}
+            & .content {opacity: .9;}
+      }
+}
+
+.menu-item-img {
+      height: 100%;
+      position: absolute;
+      transition: all 6s cubic-bezier(.25, .45, .45, .95);
+}

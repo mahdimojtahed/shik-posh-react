@@ -1,0 +1,18 @@
+
+.collection-page {
+   display: flex;
+   flex-direction: column;
+   
+   
+
+   h1 {
+      margin-bottom: 2.5rem;
+      align-self: center;
+   }
+
+   .collection-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+   }
+}

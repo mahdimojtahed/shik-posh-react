@@ -1,0 +1,55 @@
+@import "colorings";
+
+$transition: all .3s ease-in-out;
+
+$border-radius-1: .4rem;
+$border-radius-2: .6rem;
+$border-radius-3: .8rem;
+$border-radius-4: 1.2rem;
+$border-radius-5: 1.6rem;
+$border-radius-6: 2rem;
+
+$max-width: 1170px;
+$fixed-width-6: 600px; // for Forms or Cards
+$fixed-width-7: 700px; // for Forms or Cards
+$fixed-width-8: 800px; // for Forms or Cards
+$fixed-width-9: 900px; // for Forms or Cards
+
+
+.title {
+    text-align: center;
+    text-transform: capitalize;
+
+    h2 {
+        margin-bottom: .8rem;
+    }
+
+    div {
+        background: $clr-primary-500;
+        width: 7rem;
+        height: .25rem;
+        margin: 0 auto 1.5rem auto ;
+    }
+}
+
+@mixin alert {
+    padding: 0.367rem 0.75rem;
+    margin-bottom: 1rem;
+    border-color: transparent;
+    border-radius: $border-radius-1;
+
+}
+
+.alert-danger {
+    @include alert;
+    color: $red-dark;
+    background: $red-light;
+}
+
+.alert-success {
+    @include alert;
+    color: $green-dark;
+    background: $green-light;
+}
+
+

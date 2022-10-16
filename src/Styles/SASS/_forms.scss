@@ -1,0 +1,139 @@
+
+.form {
+    
+    @extend .section-center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    border-radius: $border-radius-1;
+    box-shadow: $shadow-2;
+    padding: 2rem 2.5rem;
+    background: $white;
+
+    max-width: $fixed-width-6;
+
+
+    
+    div {
+        margin-bottom: 1rem;
+    }
+
+    label {
+        display: block; // to always start in a new line
+        font-size: $small-text;
+        margin-bottom: .5rem;
+        text-transform: capitalize;
+        letter-spacing: $letter-spacing-1;
+        font-family: $heading-font;
+    }
+    
+    input, textarea {
+        width: 100%;
+        padding: .375rem;
+        border-radius: $border-radius-1;
+        background: $background-color;
+        border: 1px solid $clr-grey-200;
+        resize: none;
+
+        &:focus {
+            border: 1px solid $clr-grey-400;
+            outline: 0;
+        }
+    }
+
+    textarea {
+        height: 7rem;
+    }
+    
+    small {
+        color: $red-dark;
+        letter-spacing: $letter-spacing-1;
+        text-transform: capitalize;
+    }
+
+    .text-success {
+        color: $green-dark;
+    }
+
+    ::placeholder {
+        font-family: inherit;
+        color: $clr-grey-500;
+    }
+
+    button {
+        @extend .btn;
+        width: 100%;
+
+        &:hover {
+            background: $clr-primary-600 ;
+        }
+
+        &:active {
+            transform: scale(.98);
+        }
+    }
+
+}
+
+.form-inner {
+    
+
+    div {
+        margin: 1rem 0;
+    }
+
+    label {
+        display: block; // to always start in a new line
+        font-size: $small-text;
+        text-transform: capitalize;
+        letter-spacing: $letter-spacing-1;
+        font-family: $heading-font;
+    }
+    
+    input, textarea {
+        width: 100%;
+        padding: .375rem;
+        border-radius: $border-radius-1;
+        background: $background-color;
+        border: 1px solid $clr-grey-200;
+        resize: none;
+
+        &:focus {
+            border: 1px solid $clr-grey-400;
+            outline: transparent;
+        }
+    }
+
+    textarea {
+        height: 7rem;
+    }
+    
+    small {
+        color: $red-dark;
+        letter-spacing: $letter-spacing-1;
+        text-transform: capitalize;
+    }
+
+    .text-success {
+        color: $green-dark;
+    }
+
+    ::placeholder {
+        font-family: inherit;
+        color: $clr-grey-500;
+    }
+
+    button {
+        @extend .btn;
+        width: 100%;
+
+        &:hover {
+            background: $clr-primary-600 ;
+        }
+
+        &:active {
+            transform: scale(.98);
+        }
+    }
+
+}

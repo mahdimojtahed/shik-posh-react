@@ -1,0 +1,29 @@
+@import '../../Styles/style.scss';
+
+
+
+.btns-container {
+   display: flex;
+   flex-direction: column;
+
+   Button {
+      margin-top: 1.5rem;
+   }
+}
+
+
+@media screen and (min-width : 992px) {
+   .sign-in-form-container {
+      width: 30vw;
+   }
+
+   .btns-container {
+      flex-direction: row;
+      gap: 1rem;
+      justify-content: space-between;
+      Button {
+         &:first-child {flex: .25;}
+         &:last-child {flex: .75;}
+      }
+   }
+}

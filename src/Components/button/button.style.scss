@@ -1,0 +1,35 @@
+@import '../../Styles/style.scss';
+
+.custom-button {
+   min-width: 135px;
+   width: auto;
+   height: 50px;
+   letter-spacing: $letter-spacing-1;
+   padding: 0 1rem;
+   font-size: 1rem;
+   background-color: $clr-grey-4000;
+   color: $white;
+   text-transform: uppercase;
+   font-weight: 700;
+   border: .1rem solid transparent;
+   cursor: pointer;
+   transition: $transition;
+
+   &:hover {
+      background-color: $white;
+      color: $clr-grey-4000;
+      border: .1rem solid $clr-grey-4000;
+   }
+
+   &.google-btn {
+      background-color: $clr-primary-500;
+   
+      &:hover {
+         background-color: $white;
+      }
+   }
+
+   &.zarin {
+      margin-top: 2rem;
+   }
+}

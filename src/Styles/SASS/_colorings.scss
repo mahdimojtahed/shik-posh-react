@@ -1,0 +1,88 @@
+
+// Primary Colors:
+$clr-primary-100: #e0deff;
+$clr-primary-200: #c1beff;
+$clr-primary-300: #a29dff;
+$clr-primary-400: #337dff;
+$clr-primary-500: #645cff;
+$clr-primary-600: #504acc;
+$clr-primary-700: #3c3799;
+$clr-primary-800: #282566;
+$clr-primary-900: #141233;
+
+// Shade of Grey
+$clr-grey-10: #f8f8f8;
+$clr-grey-20: #e8e8e8;
+$clr-grey-30: #dcdcdc;
+$clr-grey-40: #d8d8d8;
+$clr-grey-50: #d3d3d3;
+$clr-grey-60: #c8c8c8;
+$clr-grey-70: #bebebe;
+$clr-grey-80: #b8b8b8;
+$clr-grey-90: #b0b0b0;
+$clr-grey-100: #a9a9a9;
+$clr-grey-200: #a0a0a0;
+$clr-grey-300: #909090;
+$clr-grey-400: #888888;
+$clr-grey-500: #808080;
+$clr-grey-600: #707070;
+$clr-grey-700: #696969;
+$clr-grey-800: #606060;
+$clr-grey-900: #505050;
+$clr-grey-900: #505050;
+$clr-grey-1000: #404040;
+$clr-grey-2000: #383838;
+$clr-grey-3000: #282828;
+$clr-grey-4000: #202020;
+$clr-grey-5000: #181818;
+
+// Grey Colors 
+
+$clr-grey-ash: #b2beb5;
+$clr-grey-blue: #7393b3;
+$clr-grey-dark: #a9a9a9;
+$clr-grey: #808080;
+$clr-grey-gunmetal: #818589;
+$clr-grey-light: #d3d3d3;
+$clr-grey-pewter: #899499;
+$clr-grey-platinum: #e5e4e2;
+$clr-grey-platinum: #e5e4e2;
+$clr-grey-slate: #708090;
+$clr-grey-smoke: #848884;
+$clr-grey-steel: #71797e;
+
+$clr-grey-sage: #8a9a5b;
+$clr-charocoal-grey: #36454f;
+$clr-grey-glaucous: #6082b6;
+
+
+// Dark Mode Coloring 
+
+
+
+// Solid Colors
+$white: #fff;
+$white-smoke: #f5f5f5;
+$black: #222;
+$silver: #c0c0c0;
+$red-dark: #842029;
+$red-light: #f8d7da;
+$green-dark: #0f5132;
+$green-light: #d1e7dd;
+
+
+
+// Color Usage
+$background-color: $white-smoke;
+$text-color: $clr-grey-1000;
+$heading-color: $clr-grey-3000;
+
+// Shadows
+$shadow-1: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+$shadow-2: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+$shadow-3: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+$shadow-4: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+$shadow-5: 0 2px 10px rgba(0, 0, 0, .2);
+
+$shadow-outer-1: 0 5px 30px 5px rgba($color: #000000, $alpha: 0.5);
+$shadow-outer-2: 0 15px 30px 5px rgba($color: #000000, $alpha: 0.3);

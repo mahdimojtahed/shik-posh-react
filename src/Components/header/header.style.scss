@@ -1,0 +1,49 @@
+@import '../../Styles/style.scss';
+
+.header-container {
+   @extend .section-center;
+   padding: .8rem 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   @media screen and (max-width : 800px) {
+      
+   }
+}
+
+.header-logo-container {
+   user-select: none;
+   cursor: pointer;
+   margin: 0;
+}
+
+.header-nav-container {
+   display: flex;
+   justify-content: space-between;   
+   align-items: center;
+   
+   a {
+      text-transform: uppercase;
+      margin-right: 1.2rem;
+      font-size: 1.3rem;
+      text-decoration: none;
+      color: $clr-grey-4000;
+      user-select: none;
+      cursor: pointer;
+      
+      &:hover {
+         color: $clr-grey-300;
+      }
+      
+   }
+   
+   i {
+      color: $clr-grey-4000;
+      font-size: 1.7rem;
+      &:hover {
+         color: $clr-grey-300;
+      }
+      
+   }
+}

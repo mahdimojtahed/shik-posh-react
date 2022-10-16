@@ -1,0 +1,17 @@
+
+.sign-up-form-container {
+   margin-top: 3rem;
+
+   Button {
+      margin-top: 1.5rem;
+      display: block;
+      width: 100%;
+   }
+}
+
+@media screen and (min-width : 992px) {
+   .sign-up-form-container {
+      margin: 0;
+      width: 30vw;
+   }
+}
